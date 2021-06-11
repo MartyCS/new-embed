@@ -1,43 +1,26 @@
 <!DOCTYPE html>
 <head>
+
+  <script>
+    window.CROWDSMART_TOKEN_USER = {
+      token: 'token_auth'
+    }
+  </script>
+  
 <html>
 <body>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<p>
-This page has the embed code generated after the refactor and fixes on 3/1/21.</p>
+<h1>Hello World</h1>
+<p>I'm hosted with GitHub Pages.
+This page is testing token auth.</p>
 
+  <link href="https://www.crowdsmartstage.ai/css/embedStyle.css" rel="stylesheet" type="text/css">
+  <script
+      src="https://www.crowdsmartstage.ai/js/embedScript.js"
+      id="crowdsmart-embed-script"
+      data-embed-url="https://www.crowdsmartstage.ai/embed/evaluation/0224/bf4c3c7a-7b8e-11eb-bffa-0ad589fedacf/729ad58e-7b8f-11eb-a8a5-0ad589fedacf">
+  </script>
 
-        <script>
-  (() => {
-    const resizer = document.createElement('script')
-    resizer.src = 'https://cdn.jsdelivr.net/npm/iframe-resizer@4.2.11/js/iframeResizer.min.js'
-    document.body.appendChild(resizer)
-    resizer.addEventListener('load', function () {
-      const iframe = document.createElement('iframe')
-      iframe.id = 'crowdsmart-embed-app'
-      iframe.src = 'https://www.crowdsmartstage.ai/embed/evaluation/0224/7f88c5ba-76fa-11eb-8db0-0ad589fedacf/acc02adc-76fa-11eb-aaf8-0ad589fedacf'
-      document.body.appendChild(iframe)
-      iframe.addEventListener('load', function () {
-        iFrameResize({}, '#crowdsmart-embed-app')
-      })
-    })
-  })()
-</script>
-        <style>
-  #crowdsmart-embed-app {
-    background: transparent;
-    border: none;
-    bottom: 0;
-    max-height: 100vh;
-    max-width: 100vw;
-    position: fixed;
-    right: 0;
-    width: 420px;
-  }
-</style>
-      
+</body>
+</html>
 
 </head>
